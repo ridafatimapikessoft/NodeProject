@@ -3,8 +3,8 @@ var mongoose = require('mongoose');
 var schema = new mongoose.Schema({
     email: {
         type: String,
-        required: true,
-        unique: true
+        //required: true,
+        //unique: true
     },
     firstName: {
         type: String,
@@ -14,14 +14,9 @@ var schema = new mongoose.Schema({
         type: String,
         default: ''
     },
-    phone: String,
-    dateofbirth:
-    {
-        type:Date,
-        required:true
-    }
+    phone: String
 });
 
-var user = new mongoose.model('User', schema);  // Model is basically a collection
+var user = new mongoose.model('user', schema);  // Model is basically a collection
 
 module.exports = user;
