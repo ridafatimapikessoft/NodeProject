@@ -9,6 +9,7 @@ const port = 5000;
 //import isEven from './tests/sum.test';
 //const mathOperations = require('./tests/sum.test');
    //DB Operations
+   const sum=require ('./tests/sum.test');
 // Call the async function to establish the MongoDB connection
 //connectToMongoDB();
 app.get('/', (req, res) => {
