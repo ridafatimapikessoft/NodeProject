@@ -17,7 +17,7 @@ beforeEach(async () => {
   test('Update a User', async () => {
 
     const userData = {
-        email: 'user5@example.com',
+        email: 'user10@example.com',
         firstName: 'John',
         lastName: 'Doe',
         phone: '1234567890',
@@ -38,4 +38,5 @@ beforeEach(async () => {
     expect(user1.firstName).toEqual(updatedData.firstName);
     expect(user1.lastName).toEqual(updatedData.lastName);
     expect(user1.phone).toEqual(updatedData.phone);
+    expect(user1).toBeTruthy(); 
   });
